@@ -51,6 +51,9 @@ if (menzione === conn.user.jid) {
   `Sei un visionario. A quando il tuo libro sugli insulti ai bot?`,
   `Sono così impressionato dal tuo insulto che sto ridendo in binario!`,
   `Il tuo spirito pionieristico nell'insultare un bot aprirà nuove frontiere per l'umanità.`,
+  `Tua mamma mi conosce così bene che ci vediamo ogni notte.`,
+  `Tua mamma è così troia che ormai vende abbonamenti per il suo culo.`,
+  `Tuo padre quando ti ha visto per la prima volta a pensato di venderti su vinted.`,
 ];
 
     conn.reply(m.chat, pickRandom(botInsults), m);
@@ -65,4 +68,3 @@ handler.command = new RegExp
 export default handler
 function pickRandom(list) {
 return list[Math.floor(Math.random() * list.length)]
-}
